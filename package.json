@@ -1,0 +1,30 @@
+{
+  "name": "byte.ly",
+  "version": "1.0.0",
+  "description": "URL shortener",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junghwayang/byte.ly.git"
+  },
+  "author": "Junghwa Yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junghwayang/byte.ly/issues"
+  },
+  "homepage": "https://github.com/junghwayang/byte.ly#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "shortid": "^2.2.15",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
