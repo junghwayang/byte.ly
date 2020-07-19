@@ -9,9 +9,9 @@ connectDB();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Building URL shortener service!');
-});
+// Routes
+app.use('/', require('./routes/redirect'));
+app.use('/api/url', require('./routes/url'));
 
 const PORT = process.env.PORT || 3000;
 
