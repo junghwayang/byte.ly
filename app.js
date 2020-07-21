@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Routes
 app.use('/', require('./routes/redirect'));
-app.use('/api/url', require('./routes/url'));
+app.use('/api', require('./routes/shorten'));
 
 const PORT = process.env.PORT || 3000;
 
