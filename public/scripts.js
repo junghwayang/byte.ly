@@ -5,7 +5,7 @@ form.addEventListener('submit', async e => {
 
   const formData = new FormData(form).entries();
 
-  const response = await fetch('http://localhost:3000/api/shorten', {
+  const response = await fetch('http://urlshortener-bytely.herokuapp.com/api/shorten', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(Object.fromEntries(formData))
